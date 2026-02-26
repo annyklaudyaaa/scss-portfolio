@@ -1,186 +1,383 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Portfolio - Anny Klaudya</title>
-
-    <!-- Font -->
+    <title>Portfolio — Anny Klaudya Hutabarat</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-
-    <!-- All styles in external file -->
     <link rel="stylesheet" href="custom.css" />
   </head>
   <body>
-    <!-- NAVBAR (sticky) -->
+    <!-- NAV -->
     <header class="nav-wrap">
       <nav class="navbar">
-        <div class="nav-inner">
-          <div class="brand">Anny<span>Klaudya</span></div>
-          <ul class="nav-links">
-            <li><a href="#about">Tentang</a></li>
-            <li><a href="#education">Pendidikan</a></li>
-            <li><a href="#experience">Pengalaman</a></li>
-            <li><a href="#skills">Keahlian</a></li>
-            <li><a href="#projects">Proyek</a></li>
-            <li><a href="#contact">Kontak</a></li>
-          </ul>
-        </div>
+        <div class="brand">A<em>K</em></div>
+        <ul class="nav-links">
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#education">Pendidikan</a></li>
+          <li><a href="#experience">Pengalaman</a></li>
+          <li><a href="#skills">Keahlian</a></li>
+          <li><a href="#organization">Organisasi</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <div class="nav-dot"></div>
       </nav>
     </header>
 
-    <!-- HERO (full height) -->
-    <section id="home" class="hero reveal">
-      <div class="hero-overlay"></div>
-      <div class="hero-inner">
-        <img class="profile-pic" src="anny.jpg" alt="Foto Profil Anny" />
-        <h1 class="hero-title">Anny Klaudya</h1>
-        <p class="hero-sub">🚀 Web Developer • Frontend Specialist</p>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-bg-text" aria-hidden="true">ANNY</div>
+      <div class="hero-content">
+        <div class="hero-label">Portfolio — 2026</div>
+        <h1 class="hero-title">
+          <span class="line">Anny</span>
+          <span class="line italic">Klaudya</span>
+          <span class="line">Hutabarat</span>
+        </h1>
+        <p class="hero-role">Informatics Student &amp; Full-Stack Developer</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="#projects">Lihat Proyek</a>
-          <a class="btn btn-ghost" href="#contact">Hubungi</a>
+          <a class="btn-main" href="#experience">Lihat Proyek</a>
+          <a class="btn-line" href="#contact">Kontak Saya</a>
         </div>
+      </div>
+      <div class="hero-scroll">scroll ↓</div>
+      <div class="hero-img-wrap">
+        <img src="anny.jpg" alt="Anny Klaudya" class="hero-img" />
+        <div class="hero-img-frame"></div>
       </div>
     </section>
 
-    <!-- ABOUT (card-bleed: kotak full-width visual) -->
-    <section id="about" class="section reveal">
-      <div class="card-bleed">
-        <div class="card-inner grid-2">
-          <div class="about-left">
-            <h2>👩 Tentang Saya</h2>
-            <p>
-              Saya seorang <strong>Web Developer</strong> yang fokus ke
-              frontend: HTML, CSS/SCSS, JavaScript, dan framework modern. Saya
-              membangun UI yang bersih, responsif, dan cepat — dengan perhatian
-              khusus pada aksesibilitas dan pengalaman pengguna.
-            </p>
-
-            <ul class="contact-list">
-              <li>
-                📧
-                <a href="mailto:annyklaudya@gmail.com">annyklaudya@gmail.com</a>
-              </li>
-              <li>
-                💬
-                <a
-                  href="https://wa.me/6282219674622"
-                  target="_blank"
-                  rel="noopener"
-                  >+62 822-1967-4622</a
-                >
-              </li>
-              <li>📍 Yogyakarta</li>
-            </ul>
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+      <div class="section-label">01 — Tentang</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Membangun solusi<br /><em>digital yang bermakna</em></h2>
+          <p>
+            Saya adalah mahasiswa <strong>Informatika</strong> di Institut
+            Teknologi Del dengan fondasi kuat dalam pengembangan perangkat
+            lunak, struktur data, dan algoritma.
+          </p>
+          <p>
+            Berpengalaman membangun aplikasi web dan mobile menggunakan
+            <strong>Laravel, SQL, dan Android</strong>. Didorong oleh semangat
+            memecahkan masalah dan komitmen untuk terus belajar demi
+            berkontribusi pada solusi perangkat lunak yang inovatif.
+          </p>
+        </div>
+        <div class="about-info">
+          <div class="info-block">
+            <span class="info-label">Email</span>
+            <a href="mailto:annyklaudya@gmail.com">annyklaudya@gmail.com</a>
           </div>
-
-          <aside class="about-right">
-            <div class="mini-card">
-              <h3>✨ Fun Fact</h3>
-              <p>
-                Suka desain minimalis & main gitar — ide kadang muncul waktu jam
-                istirahat.
-              </p>
-            </div>
-
-            <div class="mini-card">
-              <h3>🎯 Saat ini</h3>
-              <p>
-                Mengerjakan portfolio interaktif & proyek e-commerce sederhana.
-              </p>
-            </div>
-          </aside>
+          <div class="info-block">
+            <span class="info-label">Telepon</span>
+            <a href="https://wa.me/6282219674622" target="_blank" rel="noopener"
+              >+62 822-1967-4622</a
+            >
+          </div>
+          <div class="info-block">
+            <span class="info-label">Lokasi</span>
+            <span>Tarutung, Indonesia</span>
+          </div>
+          <div class="info-block">
+            <span class="info-label">LinkedIn</span>
+            <a
+              href="https://www.linkedin.com/in/marthayulinda"
+              target="_blank"
+              rel="noopener"
+              >Anny Klaudya Hutabarat</a
+            >
+          </div>
+          <div class="info-block">
+            <span class="info-label">GitHub</span>
+            <a
+              href="https://github.com/annyklaudyaaa"
+              target="_blank"
+              rel="noopener"
+              >annyklaudyaaa.github.io</a
+            >
+          </div>
+          <div class="info-block">
+            <span class="info-label">Fokus</span>
+            <span>Full-Stack Web &amp; UI/UX Design</span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- EDUCATION -->
-    <section id="education" class="section reveal">
-      <div class="card-bleed">
-        <div class="card-inner">
-          <h2>🎓 Riwayat Pendidikan</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <span class="year">2023 — Sekarang</span>
-              <div class="timeline-body">
-                Institut Teknologi DEL — S1 Informatika
-              </div>
-            </div>
-            <div class="timeline-item">
-              <span class="year">2020 — 2023</span>
-              <div class="timeline-body">
-                SMA Santa Maria Tarutung — Jurusan IPA
-              </div>
-            </div>
-          </div>
+    <section id="education" class="section education-section">
+      <div class="section-label">02 — Pendidikan</div>
+      <div class="edu-card">
+        <div class="edu-year">Aug 2023 — Sept 2027 (Expected)</div>
+        <div class="edu-body">
+          <h3>Institut Teknologi Del</h3>
+          <p>Bachelor of Informatics — Sitoluama, Indonesia</p>
         </div>
+        <div class="edu-badge">Aktif</div>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience" class="section reveal">
-      <div class="card-bleed">
-        <div class="card-inner">
-          <h2>💼 Pengalaman & Proyek</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <span class="year">2024</span>
-              <div class="timeline-body">
-                Frontend Developer Intern — PT Teknologi
-              </div>
+    <section id="experience" class="section experience-section">
+      <div class="section-label">03 — Pengalaman Proyek</div>
+      <h2 class="section-title">Proyek <em>Terkini</em></h2>
+      <div class="exp-list">
+        <div class="exp-item">
+          <div class="exp-num">01</div>
+          <div class="exp-body">
+            <div class="exp-meta">
+              <span class="exp-date">Feb 2026 — Sekarang</span>
+              <span class="exp-tag">Full-Stack Dev</span>
             </div>
-            <div class="timeline-item">
-              <span class="year">2024</span>
-              <div class="timeline-body">
-                Membangun portfolio pribadi (Bootstrap & SCSS)
-              </div>
+            <h3>SMK Negeri 1 Sigumpar Information System</h3>
+            <p class="exp-place">Kecamatan Sigumpar</p>
+            <ul class="exp-bullets">
+              <li>
+                Developing a centralized web platform to digitize academic,
+                administrative, and assets management.
+              </li>
+              <li>
+                Implementing role-based access for 10+ school stakeholders to
+                ensure secure and efficient operations.
+              </li>
+              <li>
+                Building modules for attendance, grading, and teacher
+                supervision to support data-driven decision-making.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-num">02</div>
+          <div class="exp-body">
+            <div class="exp-meta">
+              <span class="exp-date">Feb 2026 — Sekarang</span>
+              <span class="exp-tag">UI/UX Design</span>
             </div>
-            <div class="timeline-item">
-              <span class="year">2023</span>
-              <div class="timeline-body">
-                Membuat aplikasi CRUD sederhana (Vanilla JS)
-              </div>
+            <h3>SmartLiving Assistant</h3>
+            <p class="exp-place">Del Institute of Technology</p>
+            <ul class="exp-bullets">
+              <li>
+                Designed high-fidelity prototypes for an inclusive smart home
+                system supporting Voice, Gesture, and Touch interactions.
+              </li>
+              <li>
+                Created detailed system flowcharts using draw.io to visualize
+                multimodal user journeys for elderly and disabled users.
+              </li>
+              <li>
+                Authored the comprehensive project report, ensuring clear
+                documentation of system requirements and design principles.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-num">03</div>
+          <div class="exp-body">
+            <div class="exp-meta">
+              <span class="exp-date">Okt 2025 — Des 2025</span>
+              <span class="exp-tag">Full-Stack Dev</span>
             </div>
+            <h3>IT Del LPPM Web Portal</h3>
+            <p class="exp-place">Del Institute of Technology</p>
+            <ul class="exp-bullets">
+              <li>
+                Developed an integrated platform for lecturers to manage
+                scientific publication funding and awards.
+              </li>
+              <li>
+                Built a specialized module for Publication Awards (Book
+                Category), automating the workflow between Lecturers, LPPM, and
+                HRD.
+              </li>
+              <li>
+                Implemented an automated notification system and digital
+                verification process to replace manual documentation.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-num">04</div>
+          <div class="exp-body">
+            <div class="exp-meta">
+              <span class="exp-date">Desember 2024</span>
+              <span class="exp-tag">Java Dev</span>
+              <span class="exp-tag">UI/UX Design</span>
+            </div>
+            <h3>Student Attendance Management System</h3>
+            <p class="exp-place">
+              Del Institute of Technology — NetBeans Project
+            </p>
+            <ul class="exp-bullets">
+              <li>
+                Collaborated in a pair to develop a Java-based attendance
+                management system using the NetBeans IDE.
+              </li>
+              <li>
+                Designed low-fidelity wireframes and scenarios for lecturer
+                login, course navigation, and session management.
+              </li>
+              <li>
+                Implemented UI components to track student attendance and
+                visualize session-based attendance data.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="section reveal">
-      <div class="card-bleed">
-        <div class="card-inner">
-          <h2>🛠️ Keahlian</h2>
+    <section id="skills" class="section skills-section">
+      <div class="section-label">04 — Keahlian</div>
+      <h2 class="section-title">Stack &amp; <em>Tools</em></h2>
 
-          <div class="skill-grid">
-            <div class="skill-card">
-              <div class="skill-head">HTML</div>
-              <div class="progress">
-                <div class="progress-fill" data-value="95">95%</div>
+      <div class="skills-bars-wrap">
+        <div class="skill-item">
+          <div class="skill-top">
+            <span class="skill-name">Laravel &amp; PHP</span
+            ><span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-val="85"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top">
+            <span class="skill-name">JavaScript &amp; React.js</span
+            ><span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-val="80"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top">
+            <span class="skill-name">UI Design (Figma)</span
+            ><span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-val="90"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top">
+            <span class="skill-name">HTML &amp; CSS</span
+            ><span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-val="88"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top">
+            <span class="skill-name">Java &amp; Kotlin</span
+            ><span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-val="75"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top">
+            <span class="skill-name">MySQL / Database</span
+            ><span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-val="80"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-cards-wrap">
+        <div class="skills-card">
+          <div class="skills-card-head">
+            <div class="skills-card-icon">⌨</div>
+            <span class="skills-card-title">Hard Skills</span>
+          </div>
+          <div class="tag-list">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React.js</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">PHP</span>
+            <span class="tag">Laravel</span>
+            <span class="tag">Java</span>
+            <span class="tag">Kotlin</span>
+            <span class="tag">Haskell</span>
+            <span class="tag">C</span>
+          </div>
+        </div>
+
+        <div class="skills-card">
+          <div class="skills-card-head">
+            <div class="skills-card-icon">🛠</div>
+            <span class="skills-card-title">Tools</span>
+          </div>
+          <div class="tag-list">
+            <span class="tag">Figma</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Draw.io</span>
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">NetBeans</span>
+            <span class="tag">Maestro</span>
+          </div>
+        </div>
+
+        <div class="skills-card">
+          <div class="skills-card-head">
+            <div class="skills-card-icon">✦</div>
+            <span class="skills-card-title">Soft Skills</span>
+          </div>
+          <div class="tag-list">
+            <span class="tag tag-soft">Communication</span>
+            <span class="tag tag-soft">Collaboration</span>
+            <span class="tag tag-soft">Growth Mindset</span>
+          </div>
+        </div>
+
+        <div class="skills-card">
+          <div class="skills-card-head">
+            <div class="skills-card-icon">🌐</div>
+            <span class="skills-card-title">Bahasa</span>
+          </div>
+          <div class="lang-list">
+            <div class="lang-item">
+              <span class="lang-name">Bahasa Indonesia</span>
+              <div class="lang-level-row">
+                <div class="lang-dots">
+                  <span class="lang-dot on"></span>
+                  <span class="lang-dot on"></span>
+                  <span class="lang-dot on"></span>
+                  <span class="lang-dot on"></span>
+                  <span class="lang-dot on"></span>
+                </div>
+                <span class="lang-level-text">Native</span>
               </div>
             </div>
-
-            <div class="skill-card">
-              <div class="skill-head">CSS / SCSS</div>
-              <div class="progress">
-                <div class="progress-fill" data-value="90">90%</div>
-              </div>
-            </div>
-
-            <div class="skill-card">
-              <div class="skill-head">JavaScript</div>
-              <div class="progress">
-                <div class="progress-fill" data-value="85">85%</div>
-              </div>
-            </div>
-
-            <div class="skill-card">
-              <div class="skill-head">Bootstrap</div>
-              <div class="progress">
-                <div class="progress-fill" data-value="88">88%</div>
+            <div class="lang-item">
+              <span class="lang-name">English</span>
+              <div class="lang-level-row">
+                <div class="lang-dots">
+                  <span class="lang-dot on"></span>
+                  <span class="lang-dot on"></span>
+                  <span class="lang-dot on"></span>
+                  <span class="lang-dot"></span>
+                  <span class="lang-dot"></span>
+                </div>
+                <span class="lang-level-text">Intermediate</span>
               </div>
             </div>
           </div>
@@ -188,191 +385,131 @@
       </div>
     </section>
 
-    <!-- CERTIFICATES -->
-    <section id="certificates" class="section reveal">
-      <div class="card-bleed">
-        <div class="card-inner">
-          <h2>📜 Sertifikat</h2>
-          <div class="cert-grid">
-            <div class="certificate-card">
-              Dicoding — Dasar Pemrograman Web (2023)
-            </div>
-            <div class="certificate-card">
-              FreeCodeCamp — Responsive Web Design (2024)
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section reveal">
-      <div class="card-bleed">
-        <div class="card-inner">
-          <h2>📂 Proyek Pilihan</h2>
-
-          <div class="project-grid">
-            <article class="project-card">
-              <img
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&auto=format&q=60"
-                alt="Portfolio Website"
-              />
-              <div class="project-overlay">
-                <h3>Portfolio Website</h3>
-                <a class="link-demo" href="#" target="_blank" rel="noopener"
-                  >🔗 Demo</a
-                >
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&auto=format&q=60"
-                alt="Landing Page"
-              />
-              <div class="project-overlay">
-                <h3>Landing Page Produk</h3>
-                <a class="link-demo" href="#" target="_blank" rel="noopener"
-                  >🔗 Demo</a
-                >
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img
-                src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=1200&auto=format&q=60"
-                alt="CRUD App"
-              />
-              <div class="project-overlay">
-                <h3>Aplikasi CRUD</h3>
-                <a class="link-demo" href="#" target="_blank" rel="noopener"
-                  >🔗 Demo</a
-                >
-              </div>
-            </article>
-          </div>
+    <!-- ORGANIZATION -->
+    <section id="organization" class="section org-section">
+      <div class="section-label">05 — Organisasi</div>
+      <div class="org-card">
+        <div class="org-icon">🏛</div>
+        <div class="org-body">
+          <span class="org-date">Nov 2025 — Sekarang</span>
+          <h3>Himpunan Mahasiswa Sarjana Informatika (HIMASTI)</h3>
+          <p class="org-sub">
+            Del Institute of Technology — Anggota Divisi Komunikasi dan
+            Informasi
+          </p>
+          <ul class="org-bullets">
+            <li>
+              Responsible for managing and disseminating academic and
+              non-academic information to 200+ students.
+            </li>
+            <li>
+              Managing digital communication channels and documentation for
+              departmental events.
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section reveal">
-      <div class="card-bleed">
-        <div class="card-inner">
-          <h2>📞 Kontak</h2>
-
-          <form class="contact-form" novalidate>
-            <div class="form-grid">
-              <input type="text" name="name" placeholder="Nama Anda" required />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Anda"
-                required
-              />
-            </div>
-
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="Pesan Anda..."
-              required
-            ></textarea>
-
-            <div class="form-actions">
-              <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-              <a
-                class="btn btn-ghost"
-                href="https://wa.me/6282219674622"
-                target="_blank"
-                rel="noopener"
-                >Hubungi via WhatsApp</a
-              >
-            </div>
-
-            <p class="note">
-              * Ini hanya demo formulir — di project asli hubungkan ke backend
-              atau layanan email.
-            </p>
-          </form>
+    <section id="contact" class="section contact-section">
+      <div class="section-label">06 — Kontak</div>
+      <div class="contact-grid">
+        <div class="contact-left">
+          <h2>Ayo <em>berkolaborasi</em></h2>
+          <p>
+            Punya ide proyek atau ingin berdiskusi? Saya terbuka untuk peluang
+            baru dan kolaborasi yang menarik.
+          </p>
+          <div class="contact-links">
+            <a
+              href="https://www.linkedin.com/in/anny-klaudya-hutabarat-272323337/"
+              target="_blank"
+              rel="noopener"
+              class="c-link"
+              >LinkedIn ↗</a
+            >
+            <a
+              href="https://github.com/annyklaudyaaa"
+              target="_blank"
+              rel="noopener"
+              class="c-link"
+              >GitHub ↗</a
+            >
+            <a
+              href="https://wa.me/6282219674622"
+              target="_blank"
+              rel="noopener"
+              class="c-link"
+              >WhatsApp ↗</a
+            >
+            <a href="mailto:annyklaudya@gmail.com" class="c-link">Email ↗</a>
+          </div>
         </div>
+        <form class="contact-form" novalidate>
+          <div class="field-group">
+            <input type="text" name="name" placeholder="Nama Anda" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Anda"
+              required
+            />
+          </div>
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Pesan Anda..."
+            required
+          ></textarea>
+          <button type="submit" class="btn-main">Kirim Pesan →</button>
+        </form>
       </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="footer-inner">
-        <p>© 2025 Anny Klaudya — Dibuat dengan ❤️</p>
-        <div class="socials">
-          <a href="#" aria-label="LinkedIn">LinkedIn</a>
-          <a href="#" aria-label="GitHub">GitHub</a>
-          <a href="#" aria-label="Instagram">Instagram</a>
-        </div>
-      </div>
+      <p>© 2026 Anny Klaudya Hutabarat — Tarutung, Indonesia</p>
     </footer>
 
-    <!-- SCRIPT: reveal, progress animation, smooth scroll, form demo -->
     <script>
-      (function () {
-        // IntersectionObserver untuk reveal & progress fill
+      (function(){
         const io = new IntersectionObserver((entries, obs) => {
           entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('active');
-
-              // animate progress fills inside this section
-              const fills = entry.target.querySelectorAll('.progress-fill');
-              fills.forEach(f => {
-                const val = parseInt(f.dataset.value || '0', 10);
-                f.style.width = val + '%';
+            if(entry.isIntersecting){
+              entry.target.classList.add('visible');
+              entry.target.querySelectorAll('.skill-fill').forEach(f => {
+                f.style.width = (f.dataset.val || 0) + '%';
               });
-
               obs.unobserve(entry.target);
             }
           });
-        }, { threshold: 0.15 });
+        }, {threshold: 0.08});
 
-        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+        document.querySelectorAll('.section, .hero').forEach(el => io.observe(el));
 
-        // navbar smooth scroll
-        document.querySelectorAll('.nav-links a').forEach(a => {
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
           a.addEventListener('click', e => {
-            e.preventDefault();
-            const target = document.querySelector(a.getAttribute('href'));
-            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            const t = document.querySelector(a.getAttribute('href'));
+            if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth', block:'start'}); }
           });
         });
 
-        // contact form demo (no backend)
         const form = document.querySelector('.contact-form');
-        if (form) {
-          form.addEventListener('submit', e => {
-            e.preventDefault();
-            // small client-side validation
-            const name = form.querySelector('[name="name"]').value.trim();
-            const email = form.querySelector('[name="email"]').value.trim();
-            const message = form.querySelector('[name="message"]').value.trim();
-            if (!name || !email || !message) {
-              alert('Lengkapi semua field sebelum mengirim.');
-              return;
-            }
-            // demo success
-            alert('Terima kasih, pesan Anda telah dikirim (demo).');
-            form.reset();
-          });
-        }
+        if(form) form.addEventListener('submit', e => {
+          e.preventDefault();
+          alert('Terima kasih! Pesan Anda telah dikirim.');
+          form.reset();
+        });
 
-        // small: update active nav link on scroll
         const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.nav-links a');
-        const secObserver = new IntersectionObserver((ents) => {
-          ents.forEach(en => {
-            if (en.isIntersecting) {
-              navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === ('#' + en.target.id)));
-            }
+        window.addEventListener('scroll', () => {
+          let current = '';
+          sections.forEach(s => { if(window.scrollY >= s.offsetTop - 120) current = s.id; });
+          document.querySelectorAll('.nav-links a').forEach(a => {
+            a.classList.toggle('active', a.getAttribute('href') === '#'+current);
           });
-        }, { threshold: 0.4 });
-        sections.forEach(s => secObserver.observe(s));
+        });
       })();
     </script>
   </body>
