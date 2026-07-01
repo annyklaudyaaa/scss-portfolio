@@ -471,7 +471,7 @@ img {
 }
 
 /* ============================================================
-   EDUCATION
+   EDUCATION & ACHIEVEMENTS
    ============================================================ */
 .education-section {
   border-top: 1px solid var(--border);
@@ -514,8 +514,38 @@ img {
   white-space: nowrap;
 }
 
+/* Achieve list design inside education or shared sections */
+.achieve-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.achieve-item {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.achieve-meta {
+  font-size: 0.75rem;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.achieve-body h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--cream);
+  margin-bottom: 0.25rem;
+}
+.achieve-body p {
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
 /* ============================================================
-   EXPERIENCE
+   EXPERIENCE / PROJECTS
    ============================================================ */
 .experience-section {
   border-top: 1px solid var(--border);
@@ -711,7 +741,7 @@ img {
   margin: 0 auto;
   padding: 0 2rem;
   display: grid;
-  grid-template-columns: 2fr 1.5fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1px;
   background: var(--border);
 }
@@ -1014,7 +1044,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
   .skills-cards-wrap {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1036,7 +1066,8 @@ img {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-  .edu-card {
+  .edu-card,
+  .achieve-item {
     grid-template-columns: 1fr;
     gap: 0.5rem;
   }
